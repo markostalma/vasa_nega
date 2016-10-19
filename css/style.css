@@ -31,6 +31,7 @@ h1, h2{
 	position: fixed;
 	width: 100%;
 	z-index: 99999;
+    box-shadow: 0 2px 5px gray;
 }
 .header-backup{
 	width: 20px;
@@ -82,6 +83,7 @@ ul.nav{
 }
 .navbar-default .navbar-nav>li>a:hover{
 	color: #42b3e5;
+    cursor: pointer;
 }
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #000;
@@ -401,6 +403,7 @@ li a.active{
 }
 .person-detail{
 	padding:10px;
+    padding-left: 25px;
 	background: #3a9cc8;
 	position: relative;
 	transition: all .7s ease 0s;
@@ -408,6 +411,9 @@ li a.active{
 	-moz-transition: all .7s ease 0s;
 	-o-transition: all .7s ease 0s;
 	-ms-transition: all .7s ease 0s;
+}
+.person-detail h3 {
+    text-align: center;
 }
 .arrow-top{
 	position: absolute;
@@ -456,12 +462,20 @@ li a.active{
 }
 .single-member:hover .person-detail{
 	background: #2a2a2a;
+    cursor: pointer;
 }
 .single-member:hover .arrow-top{
 	background: #2a2a2a;
+    cursor: pointer;
 }
 .single-member:hover .arrow-bottom{
 	background: #2a2a2a;
+    cursor: pointer;
+}
+.text-right{
+    float: right;
+    text-align: justify;
+    padding-top: 50px;
 }
 
 /*contact section*/
@@ -501,17 +515,18 @@ li a.active{
 }
 .contact-info ul li{
 	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
+	font-size: 20px;
 	color: #fff;
 }
 .contact-info i.fa{
-	font-size: 16px;
-  	padding-right: 12px;
+	font-size: 25px;
+  	margin-right: 20px;
   	width: 25px;
   	height: 38px;
 }
 .contact-info ul li span{
 	font-weight: bold;
+    font-size: 20px;
 }
 .contact-form input{
 	width: 100%;
@@ -553,6 +568,11 @@ li a.active{
 	font-family: 'BenchNine', sans-serif;
 	font-weight: bold;
 }
+.contact-form input.submit-btn:hover{
+    background: rgba(255, 255, 255, 1);
+    color: #3a9dca;
+    cursor: pointer;
+}
 .contact-form{
 	padding-right: 40px;
 }
@@ -582,6 +602,7 @@ li a.active{
 .footer-para{
 	margin: 0;
 	padding: 0;
+    text-align: center;
 }
 .footer p{
 	font-size: 12px;
@@ -862,7 +883,7 @@ responsive area
 	  margin-left: 8px;
 	}
 	.contact-info ul li {
-	  font-size: 10px;
+	  font-size: 15px;
 	}
 	.contact-info i.fa {
 	  font-size: 13px;
